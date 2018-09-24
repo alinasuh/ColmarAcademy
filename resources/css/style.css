@@ -204,6 +204,10 @@ header li:hover {
 
 /* Courses Section */
 
+#courses-grey {
+  background-color: #ECEBEB;
+}
+
 .courses {
   display: inline-flex;
   align-items: flex-start;
@@ -256,6 +260,7 @@ header li:hover {
 
 .thesis {
   display: inline-flex;
+  padding-top: 32px;
 }
 
 .video {
@@ -304,4 +309,138 @@ footer li {
 
 footer li:hover {
   color: #BFD7EA;
+}
+
+/* Mobile */
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu img {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.courses-mobile {
+  padding-bottom: 24px;
+}
+
+.course-mobile {
+  padding: 16px;
+  background-color: #ECEBEB;
+  margin: 4px 24px;
+}
+
+@media only screen and (max-width: 480px){
+
+  .main-menu, .logo, .navigation, .hightlight, .course {
+    display: none;
+  }
+
+  .photo-banner {
+    min-width: 100%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn {
+    padding: 32px 16px;
+    max-width: 350px;
+  }
+
+  .button {
+    max-width: 310px;
+  }
+
+  .news {
+    flex-direction: column;
+  }
+
+  .entry {
+    flex-direction: column;
+  }
+
+  .orientation, .campus, .lecture {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+
+  .orientation {
+    background-image: url("../images/information-orientation-mobile.jpg");
+  }
+
+  .campus {
+    background-image: url("../images/information-campus-mobile.jpg");
+  }
+
+  .lecture {
+    background-image: url("../images/information-guest-lecture-mobile.jpg");
+  }
+
+  .entry-text {
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .entries #grey {
+    background-color: white;
+  }
+
+  .title {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  #courses-grey {
+    background-color: white;
+  }
+
+  .thesis .entry-text, .thesis .entries {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+    padding: 0;
+  }
+
+  #thesis {
+    padding-bottom: 24px;
+    border-top: 1px solid #ECEBEB;
+  }
+
+  .thesis {
+    padding-top: 0;
+  }
+
+  footer .container {
+    border: none;
+  }
+
+  .copy {
+    padding: 16px 24px;
+  }
+
+}
+
+
+@media only screen and (min-width: 480px){
+
+  .mobile-menu, .courses-mobile {
+    display: none;
+  }
+
 }
