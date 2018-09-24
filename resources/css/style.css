@@ -163,7 +163,7 @@ header li:hover {
 .entry-text {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .orientation {
@@ -208,14 +208,11 @@ header li:hover {
   background-color: #ECEBEB;
 }
 
-.courses {
-  display: inline-flex;
-  align-items: flex-start;
-}
-
 .container .courses {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .course-text {
@@ -223,19 +220,19 @@ header li:hover {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  min-height: 100px;
 }
 
 .course {
-  height: auto;
   margin-top: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  width: 400px;
+  flex: 1;
 }
 
 .course img {
   height: auto;
-  max-width: 400px;
+  width: 100%;
 }
 
 .course-image {
@@ -315,7 +312,7 @@ footer li:hover {
 
 .mobile-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .mobile-menu img {
@@ -341,6 +338,7 @@ footer li:hover {
 
   .photo-banner {
     min-width: 100%;
+    height: auto;
   }
 
   .container {
@@ -366,7 +364,7 @@ footer li:hover {
   }
 
   .entry {
-    flex-direction: column;
+    display: block;
   }
 
   .orientation, .campus, .lecture {
@@ -389,8 +387,8 @@ footer li:hover {
   }
 
   .entry-text {
-    width: 100%;
-    padding-left: 32px;
+    max-width: 100%;
+    padding-left: 16px;
     padding-top: 24px;
     padding-bottom: 32px;
   }
@@ -428,6 +426,7 @@ footer li:hover {
 
   footer .container {
     border: none;
+    font-size: 13px;
   }
 
   .copy {
