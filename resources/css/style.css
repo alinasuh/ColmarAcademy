@@ -1,0 +1,307 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #1C1D21;
+}
+
+h1, h2 {
+  font-family:'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #565555;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  padding: 32px 24px;
+  position: relative;
+  top: 64px;
+}
+
+/* Header */
+
+header {
+  height: 64px;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 97%;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+header li {
+  padding: 10px 8px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+header li:hover {
+  color: white;
+  background-color: #0B3954;
+  border-radius: 10px;
+}
+
+/* Main Banner */
+
+#grey {
+  background-color: #ECEBEB;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.photo-banner {
+  min-width: 60%;
+}
+
+.photo-banner img {
+  width: 100%;
+}
+
+.learn {
+  padding-left: 24px;
+  padding-right: 280px;
+}
+
+.button {
+  color: white;
+  background-color: #565555;
+  padding: 8px 20px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.25em;
+  width: 350px;
+  transition: background-color 1.5s ease-out;
+}
+
+.button:hover {
+  background-color: #0B3954;
+}
+
+.banner h1, .banner h3 {
+  padding-bottom: 40px;
+}
+
+/* News Section */
+
+.news {
+  display: inline-flex;
+}
+
+.hightlight {
+  min-width: 60%;
+  padding-right: 24px;
+}
+
+.hightlight img {
+  width: 100%;
+}
+
+.hightlight h1 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.author {
+  font-size: 0.75em;
+  padding-top: 32px;
+}
+
+.entries {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  border: 1px solid #ECEBEB;
+  flex: 1;
+}
+
+.entry img {
+  width: 35%;
+}
+
+.entry-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.orientation {
+  background-image: url("../images/information-orientation.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 35%;
+}
+
+.campus {
+  background-image: url("../images/information-campus.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 35%;
+}
+
+.lecture {
+  background-image: url("../images/information-guest-lecture.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 35%;
+}
+
+.entry-text h3, .entry-text p {
+  padding-bottom: 15px;
+}
+
+.read-more {
+  color: #0B3954;
+}
+
+.read-more:hover {
+  color: #BFD7EA;
+}
+
+/* Courses Section */
+
+.courses {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.container .courses {
+  display: flex;
+  justify-content: center;
+}
+
+.course-text {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course {
+  height: auto;
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 400px;
+}
+
+.course img {
+  height: auto;
+  max-width: 400px;
+}
+
+.course-image {
+  opacity: 1;
+}
+
+.course-image:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-out;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Thesis */
+
+.thesis {
+  display: inline-flex;
+}
+
+.video {
+  min-width: 60%;
+  padding-right: 24px;
+}
+
+.video h1 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+video {
+  max-width: 100%;
+}
+
+.fisma {
+  background-image: url("../images/thesis-fisma.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 35%;
+}
+
+.now {
+  background-image: url("../images/thesis-now-and-then.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  min-width: 35%;
+}
+
+/* Footer */
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ECEBEB;
+}
+
+footer li {
+  display: inline-block;
+  color: #0B3954;
+  padding-left: 10px;
+}
+
+footer li:hover {
+  color: #BFD7EA;
+}
